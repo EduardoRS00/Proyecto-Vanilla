@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#pantalla-login {
+    display: none;
+}
+
+h1, h2 {
+    color: #101010;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+
+#mensaje-error {
+    margin-top: 10px;
+}
+#pantalla-2 {
+    margin-top: 50px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #008dd4;
+    color: white;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#mensaje-ultimo-acceso {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#pantalla-agregar-pregunta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#formulario {
+    margin-bottom: 20px;
+}
+
+#tabla-preguntas {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 80%;
+    padding: 0 0 0 200px;
+}
+
+#cargando{
+    width: 200px;
+}
+
+#boton-atras{
+    height: 80px;
+    width: 250px;
+    margin-top: 100px;
+    background-color: #45a049;
+    border-radius: 20px;
+    font-size: xx-large;
+}
+
+#tabla-preguntas th, #tabla-preguntas td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+#tabla-preguntas th {
+    background-color: #f4f4f4;
+}
+
+.formulario-preguntas{
+    border: 2px solid blue;
+    width: 1300px;
+    margin: 30px;
+    border-radius: 50px;
+}
+
+#pantalla3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 200px;
+}
+
+#grabar{
+    border-radius: 10px;
+}
+
+#grabar:disabled:hover {
+    background-color: red;
+    color: white;
+}
+
+.boton-deshabilitado {
+    background-color: red; 
+    color: white; 
+    cursor: not-allowed; 
+    opacity: 0.7;
+}

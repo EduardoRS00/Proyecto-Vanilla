@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla 3 - Preguntas</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <div id="pantalla3">
+
+        <div class="formulario-preguntas" id="formulario">
+            <h2>Formulario de preguntas</h2>
+            <label for="pregunta">Pregunta:</label>
+            <input type="text" id="pregunta" placeholder="Ingresa tu pregunta">
+            
+            <div>
+                <label for="respuesta">Respuesta:</label>
+                <input type="radio" id="verdadero" name="respuesta" value="Verdadero"> Verdadero
+                <input type="radio" id="falso" name="respuesta" value="Falso"> Falso
+            </div>
+            
+            <label for="puntuacion">Puntuación:</label>
+            <input type="number" id="puntuacion" min="1" max="9">
+            
+            <button id="grabar">Grabar Pregunta</button>
+        </div>
+
+        <!-- Tabla preguntas -->
+        <div id="tabla-preguntas">
+            <p id="cargando" style="display: none;">Cargando preguntas...</p>
+            <table id="tabla-lista-preguntas">
+                <thead>
+                    <tr>
+                        <th>Pregunta</th>
+                        <th>Respuesta</th>
+                        <th>Puntuación</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- cargargar preguntas -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <button id="boton-atras" onclick="window.location.href='pantalla2.html';">Volver Atrás</button>
+
+    <script src="../JS/pantalla3.js"></script>
+</body>
+</html>
